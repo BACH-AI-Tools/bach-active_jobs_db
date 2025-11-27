@@ -30,7 +30,7 @@ Visit **[EMCP Platform](https://sit-emcp.kaleido.guru)** now to start your MCP j
 
 ## Introduction
 
-This is an automatically generated MCP server using [FastMCP](https://fastmcp.wiki) for accessing the Active Jobs Db API.
+This is an MCP server for accessing the Active Jobs Db API.
 
 - **PyPI Package**: `bach-active_jobs_db`
 - **Version**: 1.0.0
@@ -108,8 +108,8 @@ export API_KEY="your_api_key_here"
 {
   "mcpServers": {
     "active_jobs_db": {
-      "command": "python",
-      "args": ["E:\path\to\active_jobs_db\server.py"],
+      "command": "uvx",
+      "args": ["--from", "bach-active_jobs_db", "bach_active_jobs_db"],
       "env": {
         "API_KEY": "your_api_key_here"
       }

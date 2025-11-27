@@ -30,7 +30,7 @@
 
 ## 简介
 
-这是一个使用 [FastMCP](https://fastmcp.wiki) 自动生成的 MCP 服务器，用于访问 Active Jobs Db API。
+这是一个 MCP 服务器，用于访问 Active Jobs Db API。
 
 - **PyPI 包名**: `bach-active_jobs_db`
 - **版本**: 1.0.0
@@ -108,8 +108,8 @@ export API_KEY="your_api_key_here"
 {
   "mcpServers": {
     "active_jobs_db": {
-      "command": "python",
-      "args": ["E:\path\to\active_jobs_db\server.py"],
+      "command": "uvx",
+      "args": ["--from", "bach-active_jobs_db", "bach_active_jobs_db"],
       "env": {
         "API_KEY": "your_api_key_here"
       }
@@ -526,7 +526,6 @@ Contains IDs of jobs that were flagged as expired yesterday. Updates once per da
 
 ## 技术栈
 
-- **FastMCP**: 快速、Pythonic 的 MCP 服务器框架
 - **传输协议**: stdio
 - **HTTP 客户端**: httpx
 
