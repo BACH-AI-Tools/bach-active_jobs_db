@@ -33,7 +33,7 @@
 这是一个 MCP 服务器，用于访问 Active Jobs Db API。
 
 - **PyPI 包名**: `bach-active_jobs_db`
-- **版本**: 1.0.0
+- **版本**: 2.0.0
 - **传输协议**: stdio
 
 
@@ -533,4 +533,4 @@ Contains IDs of jobs that were flagged as expired yesterday. Updates once per da
 
 此服务器由 [API-to-MCP](https://github.com/BACH-AI-Tools/api-to-mcp) 工具自动生成。
 
-版本: 1.0.0
+版本: 2.0.0
